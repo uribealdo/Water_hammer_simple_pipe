@@ -49,7 +49,7 @@ pois=input('Coeficiente de Poisson u: ');
 Di=input('Diametro interno de la tuberia Di(mm): ')/1000;
 do=input('Ingrese diametro de la valvula (mm): ');
 do=do/1000;
-p_ov=input('Apertura inicial de la v·lvula (%): ');
+p_ov=input('Apertura inicial de la v√°lvula (%): ');
 Ai=pi*Di^2/4; %Area de la tuberia
 ks=input('Ingrese rugosidad de la tuberia ks 0.1(mm): ')/1000;
 e=input('Espesor de la tuberia e(mm): ')/1000; % F_I EVAL e
@@ -69,7 +69,7 @@ while condic1==0
                fprintf('Perdida Total hfm = %5.2f \n',hfm);
                condic2=2;
            elseif pre3==0
-               [f,hf,hm,Qo] = loss_total_Q_unknow(Di,ks,Ho,visc,L);
+               [f,hf,hm,Qo] = loss_total_Q_unknown(Di,ks,Ho,visc,L);
                hfm=hf+hm;
                fprintf('Perdida Total hfm = %5.2f \n',hfm);
                %Estimamos el diametro optimo segun Fahlbusch (1987
