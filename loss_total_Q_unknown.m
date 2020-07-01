@@ -36,3 +36,4 @@ fprintf('Coeficiente de friccion f = %5.3f \n',f);
 hm=km*(vo)^2/(2*g);
 fprintf('Perdida Local Total hm = %5.2f \n',hm);
 end
+
