@@ -5,7 +5,7 @@ function [f,hf,hm,Qo] = loss_total_Q_unknow(Di,ks,Ho,visc,L);
 fprintf('\nDATOS DE ENTRADA: \n');
 g=9.81;
 A=pi*Di^2/4;
-%Pérdidas Locales
+%PÃ©rdidas Locales
 prg1=input('Perdidas locales totales(l) o parciales(0): ');
 [km] = coef_local_loss(prg1);
 %Perdidas por friccion
